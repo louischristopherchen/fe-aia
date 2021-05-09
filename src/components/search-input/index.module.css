@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.4rem;
+  overflow-y: hidden;
+}
+
+.input_container {
+  border-top: 0.1rem solid #dfe1e6;
+  width: 100%;
+  min-width: 300px;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  box-shadow: none;
+  border: 0.1rem solid #dfe1e6;
+  height: 3.2rem;
+  border-radius: 0.4rem 0 0 .4rem;
+}
+
+.input_container:active,
+.input_container:focus {
+  border: 0.1rem solid #0061fc;
+  border-right: none;
+}
+
+.button_container {
+  border: 0.1rem solid #dfe1e6;
+  background-color: #0061fc;
+  color: #fff;
+  border-radius: 0 0.4rem 0.4rem 0;
+  border: none;
+  padding: 0 0.8rem;
+}
+
+.input_container:active ~ .button_container,
+.input_container:focus ~ .button_container{
+  border: 0.1rem solid #0061fc;
+  border-left: none;
+}
+
+.button_container:active{
+  background-color: #5496ff;
+}

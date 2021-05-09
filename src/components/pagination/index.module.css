@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.input_container {
+  border-top: 0.1rem solid #dfe1e6;
+  width: 100%;
+  min-width: 0.4px;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  box-shadow: none;
+  border: 0.1rem solid #dfe1e6;
+  height: 3.2rem;
+  border-radius: 0.4rem;
+  -moz-appearance: textfield;
+}
+
+.input_container:active,
+.input_container:focus {
+  border: 0.1rem solid #0061fc;
+}
+
+.input_container::-webkit-outer-spin-button,
+.input_container::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.total_page{
+  display: flex;
+  flex-direction: row;
+  padding-left: .4rem;
+  gap:.4rem;
+  font-size: 1.6rem;
+}
