@@ -16,7 +16,7 @@ const App = () => {
   const perPage = 10;
   const [totalQuestion, setTotalQuestion] = useState(0);
 
-  const getDetail = useCallback(async (tags) => {
+  const getDetail = useCallback(async (tags='') => {
     try {
       const { REACT_APP_API_URL } = process.env;
       const response = await axios.get(`${REACT_APP_API_URL}/flickr/${tags}`);
