@@ -10,8 +10,6 @@ const Gallery = ({ list = [] }) => {
     gallery_back
   } = styles
 
-  console.log(list)
-
   return (
     <div className={gallery_container}>
       {list.map((item, idx) => {
